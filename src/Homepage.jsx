@@ -116,7 +116,32 @@ const Homepage = () => {
       <div className='w-80 flex flex-col gap-4'>
         {/* Quick Access */}
         <div className='flex rounded-2xl p-5 flex-col bg-white shadow-md'>
-          <h1 className='text-xl font-semibold mb-2'>Discover</h1>
+           {/* Quick Access (Development Only) */}
+      <div className="fixed bottom-4 right-4">
+        <div className="bg-gray-100 p-4 rounded-lg shadow">
+          <p className="text-xs text-gray-600 mb-2">Quick Access</p>
+          <div className="flex gap-2">
+            <button
+              onClick={() => navigate('/login')}
+              className="bg-blue-500 text-white px-2 py-1 rounded text-xs  cursor-pointer"
+            >
+              Login
+            </button>
+            <button
+              onClick={() => navigate('/signup')}
+              className="bg-green-500 text-white px-2 py-1 rounded text-xs cursor-pointer"
+            >
+              Signup
+            </button>
+             <button
+              onClick={() => navigate('/dashboard')}
+              className="bg-red-500 text-white px-2 py-1 rounded text-xs cursor-pointer"
+            >
+              Dashboard
+            </button>
+          </div>
+        </div>
+      </div>
           </div>
       </div>
     </div>
