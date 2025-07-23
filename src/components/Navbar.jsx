@@ -1,8 +1,17 @@
 import React from 'react'
 import { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
+  const navigate = useNavigate()
+
+  const handleLoginClick = () => {
+    navigate('/login')
+  }
+  const handleSignupClick = () => {
+    navigate('/signup')
+  }
 
   return (
     <nav className="bg-[#ebe6e6] shadow-lg sticky top-0 z-50">
@@ -25,8 +34,10 @@ const Navbar = () => {
           </div>
           {/* Secondary Nav */}
           <div className="hidden md:flex items-center space-x-3 ">
-            <a href="/login" className="py-2 px-2 font-medium text-gray-500 rounded hover:bg-green-500 hover:text-white transition duration-300">Log In</a>
-            <a href="/signup" className="py-2 px-2 font-medium text-white bg-green-500 rounded hover:bg-green-400 transition duration-300">Sign Up</a>
+           <ul className='flex flex-row gap-4'>
+            <li onClick={handleLoginClick} className='cursor-pointer hover:text-green-500 transition duration-300'>Login</li>
+            <li onClick={handleSignupClick} className='cursor-pointer hover:text-green-500 transition duration-300'>Signup</li>
+           </ul>
           </div>
           {/* Mobile menu button */}
           <div className="md:hidden flex items-center">
