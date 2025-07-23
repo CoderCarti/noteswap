@@ -116,6 +116,19 @@ const Homepage = () => {
       <div className='w-80 flex flex-col gap-4'>
         {/* Quick Access */}
         <div className='flex rounded-2xl p-5 flex-col bg-white shadow-md'>
+          <h1>Discover</h1>
+          
+
+
+
+
+
+
+
+
+
+
+
            {/* Quick Access (Development Only) */}
       <div className="fixed bottom-4 right-4">
         <div className="bg-gray-100 p-4 rounded-lg shadow">

@@ -35,8 +35,8 @@ const Navbar = () => {
           {/* Secondary Nav */}
           <div className="hidden md:flex items-center space-x-3 ">
            <ul className='flex flex-row gap-4'>
-            <li onClick={handleLoginClick} className='cursor-pointer hover:text-green-500 transition duration-300'>Login</li>
-            <li onClick={handleSignupClick} className='cursor-pointer hover:text-green-500 transition duration-300'>Signup</li>
+            <li onClick={handleLoginClick} className='py-4 px-2 text-gray-500 font-semibold cursor-pointer hover:text-green-500 transition duration-300'>Login</li>
+            <li onClick={handleSignupClick} className='py-4 px-2 text-gray-500 font-semibold cursor-pointer hover:text-green-500 transition duration-300'>Signup</li>
            </ul>
           </div>
           {/* Mobile menu button */}
