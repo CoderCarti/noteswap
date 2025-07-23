@@ -7,7 +7,7 @@ const Homepage = () => {
     const navigate = useNavigate()
 
   return (
-    <div className="min-h-screen flex flex-row p-6 gap-6 max-w-7xl mx-auto">
+    <div className="h-auto flex flex-row p-6 gap-6 max-w-7xl mx-auto from-indigo-50 to-green-200">
       {/* Left Sidebar - Fixed width */}
       <div className='w-80 flex flex-col gap-4'>
         {/* Profile Card */}
@@ -117,7 +117,7 @@ const Homepage = () => {
         {/* Quick Access */}
         <div className='flex rounded-2xl p-5 flex-col bg-white shadow-md'>
           <h1>Discover</h1>
-          
+
 
 
 
